@@ -109,7 +109,7 @@ alert(`Hello,${user}`);*/
 
 //ОПЕРАТОРИ
 
-console.log('arr' + " -object");
+/*console.log('arr' + " -object");
 
 console.log(4 + " -object");
 
@@ -121,4 +121,24 @@ let incr = 10,
 //++incr;
 //--decr;
 
-console.log(incr++ + "/" + decr++);
+console.log(incr++ + "/" + decr++);*/
+
+const numberOfFilms = +prompt('Скільки фільмів ви уже подивилися?', '');
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+const a = prompt('Один із останніх переглянутих фільмів?', ''),
+    b = prompt('На скільки оціните його?', ''),
+    c = prompt('Один із останніх переглянутих фільмів?', ''),
+    d = prompt('На скільки оціните його?', '');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
